@@ -1,9 +1,9 @@
 name: manylinux2014
 
-on:
-  push:
-    branches:
-    - master
+#on:
+#  push:
+#    branches:
+#    - master
         
 env:
   BUILD_TYPE: Release
@@ -30,7 +30,7 @@ jobs:
       matrix:
         PYTHON_VERSION: ["3.9", "3.10"]
 
-    container: quay.io/pypa/manylinux2014_x86_64
+    container: k0tb9g9m0t/manylinux-bazel-2014
 
     steps:    
     - uses: actions/checkout@v2
@@ -94,7 +94,7 @@ jobs:
       matrix:
         PYTHON_VERSION: ["3.9", "3.10"]
 
-    container: quay.io/pypa/manylinux2014_x86_64
+    container: k0tb9g9m0t/manylinux-bazel-2014
     
     steps: 
     
@@ -145,7 +145,7 @@ jobs:
       matrix:
         PYTHON_VERSION: ["3.9", "3.10"]
 
-    container: quay.io/pypa/manylinux2014_x86_64
+    container: k0tb9g9m0t/manylinux-bazel-2014
 
     steps: 
     - name: Set env

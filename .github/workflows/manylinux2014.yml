@@ -4,7 +4,9 @@ name: manylinux2014
 #  push:
 #    branches:
 #    - master
-        
+
+on: [push]
+
 env:
   BUILD_TYPE: Release
   DEV_MODE: ON   

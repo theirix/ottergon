@@ -11,7 +11,10 @@ target_link_libraries(
         ${PROJECT_NAME} PRIVATE
         rocketjoe::log
         rocketjoe::wasm_runner
-        ${CONAN_LIBS}
+        CONAN_PKG::catch2
+        CONAN_PKG::proxy-wasm-cpp-host
+        CONAN_PKG::boost
+        CONAN_PKG::openssl
 )
 
 include(CTest)

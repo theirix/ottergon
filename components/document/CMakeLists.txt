@@ -38,9 +38,8 @@ set_property(TARGET rocketjoe_${PROJECT_NAME} PROPERTY EXPORT_NAME ${PROJECT_NAM
 
 target_link_libraries(
         rocketjoe_${PROJECT_NAME} PRIVATE
-        ${CONAN_LIBS}
-        boost_json
         dl
+        CONAN_PKG::boost
 )
 
 target_include_directories(

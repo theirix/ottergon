@@ -22,8 +22,7 @@ target_link_libraries(
         rocketjoe_${CURRENT_TARGET}
         INTERFACE
         #PRIVATE
-        #${Boost_LIBRARIES}
-        #${CONAN_LIBS}
+
 )
 
 target_include_directories(
